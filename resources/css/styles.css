@@ -1,0 +1,258 @@
+
+html {
+	font-family: Helvetica;
+	line-height: 1.4;
+	font-size: 18px;
+}
+
+/*Group Selectors*/
+
+.flex {
+	display: flex;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+/*Header Styles*/
+
+header {
+	width: 960px;
+	background-color: cadetblue;
+	margin: 0 auto;
+	color: white;
+	margin-top: 1rem;
+}
+
+header img,header h1,header nav,header nav ul li {
+	display: inline;
+}
+
+header img {
+	height: 1.5rem;
+	padding: 0 1rem 0 2rem;
+}
+
+header h1 {
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+header nav ul li {
+	margin: 1rem 2rem 1rem 0;
+}
+
+.hiddenDesktop {
+	display: none;
+}
+
+/* Top areas styles */
+
+#topSection {
+	background-image: url("../images/glasses-bg.png");
+	background-size: cover;
+	height: 30rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+#sloganBlock {
+	position: relative;
+	top: 10rem;
+	padding: 1.5rem 5rem;
+	background-color: white;
+	margin-right: 6rem;
+}
+
+#sloganBlock h2 {
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 1.2;
+}
+
+/* Services Section */
+
+#services {
+	display: flex;
+	justify-content: center;
+}
+
+.service {
+	margin: 3rem;
+	height: 8rem;
+	width: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.service h3 {
+	margin: 0;
+}
+
+#exams img {
+	width: 3.5rem;
+}
+
+#fittings img,#delivery img {
+	width: 4rem;
+}
+
+/* About Section */
+
+#about {
+	width: 960px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.aboutBlock {
+	width: 35%;
+	display: inline-block;
+	margin-bottom: 5rem;
+	margin-right: 5%;
+}
+
+.aboutBlock h3 {
+	width: 10rem;
+	padding: .5rem 1.25rem;
+	background-color: cadetblue;
+	color: white;
+	margin-bottom: 1rem;
+	margin-right: 5%;
+}
+
+/* Footer */
+
+footer {
+	width: 960px;
+	padding: 4rem;
+	background-color: azure;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+footer img {
+	height: 1.5rem;
+	padding-right: 1rem;
+}
+
+footer p {
+	display: inline;
+}
+
+@media only screen and (max-width: 1024px) {
+	body {
+		margin: 0;
+	}
+
+	section {
+		width: 100%;
+	}
+
+	header {
+		margin-top: 0;
+		width: 100%;
+	}
+
+	#sloganBlock {
+		position: relative;
+		top: 4rem;
+		padding: 0.75rem 4rem;
+		background-color: white;
+		margin-right: 2rem;
+		font-size: 1.33rem;
+	}
+
+	#topSection {
+		height: 22rem;
+	}
+
+	footer {
+		width: 100%;
+	}
+
+	#about {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+
+	html {
+		font-size: 16px;
+	}
+	header h1 {
+		display: none;
+	}
+
+	.hiddenPhone {
+		display: none;
+	}
+
+	.hiddenDesktop {
+		display: flex;
+	}
+
+	#topSection {
+		height: 24rem;
+		background-position: 20%;
+	}
+
+	#sloganBlock {
+		position: relative;
+		top: 9rem;
+		padding: 1rem 0;
+		background-color: white;
+		margin-right: 0;
+		font-size: 1rem;
+		width: 100%;
+	}
+
+	#sloganBlock h2 {
+		text-align: center;
+	}
+
+	#services {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#about {
+		flex-direction: column;
+	}
+
+	.aboutBlock {
+		width: 90%;
+		padding: 1rem;
+	}
+
+	.aboutBlock h3 {
+		width: 90%;
+		text-align: center;
+	}
+
+	footer {
+		width: 60%;
+	}
+
+	footer p {
+		display: none;
+	}
+
+	footer img {
+		margin: 0 auto;
+	}
+}
